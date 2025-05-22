@@ -37,6 +37,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
+      - name: Validate initilize template
+        run: packer init ./project2/aws-ubuntu.pkr.hcl
+
       - name: Validate Packer template
         run: packer validate ./project2/aws-ubuntu.pkr.hcl
 
