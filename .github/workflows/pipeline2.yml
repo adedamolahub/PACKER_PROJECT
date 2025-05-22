@@ -3,9 +3,15 @@ name: Build AMI with Packer
 
 on:
   push:
-    branches: [ main ]
+    branches: 
+      - main
+    paths:
+      - "project2/**"  
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+    paths:
+      - "project2/**"
 
 jobs:
   packer:
