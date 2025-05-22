@@ -8,7 +8,7 @@ packer {
 }
 
 source "amazon-ebs" "ubuntu" {
-  ami_name      = "learn-packer-linux-aws"
+  ami_name      = "learn-packer-linux-aws-1"
   instance_type = "t2.micro"
   region        = "us-east-1"
   source_ami = "ami-084568db4383264d4"
@@ -48,3 +48,4 @@ build {
     output = "builds/manifest.json"
   }
 }
+
