@@ -33,7 +33,7 @@ build {
 
     provisioner "shell" {
     environment_vars = [
-        "FOO=hello world packer",
+        "FOO=hello world",
     ]
     inline = [
         "echo Installing Redis",
