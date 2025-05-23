@@ -33,7 +33,7 @@ build {
 
     provisioner "shell" {
     environment_vars = [
-        "FOO=hello world 1",
+        "FOO=hello world ",
     ]
     inline = [
         "echo Installing Redis",
@@ -45,6 +45,8 @@ build {
     }
 
     post-processor "manifest" {
-    output = "builds/manifest.json"
+    output = "./project1/builds/manifest.json"
   }
 }
+
+

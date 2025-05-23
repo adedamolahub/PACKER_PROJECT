@@ -47,6 +47,6 @@ build {
     }
 
     post-processor "manifest" {
-    output = "builds/manifest.json"
+    output = "./project2/builds/manifest.json"
   }
 }
